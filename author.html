@@ -33,21 +33,25 @@
 
 <p id="result">This text will be replaced </p>
 
-<script>
-    var good = 0;
-    var oops = 0;
-    function checkAuthor() {
-        var hiddenAuthor = document.getElementById("hiddenAuthor").value;
-        var guessingAuthor = document.getElementById("guessingAuthor").value;
-        if (hiddenAuthor === guessingAuthor) {
-            good++;
-            alert("You got it right!");
+<script> 
+
+    let good=0;
+    let oops=0;
+    function checkAuthor (){
+        console.log("Checking Author names")
+        hiddenAuthorname = document.getElementById("id").value
+        guessedname = document.getElementById("id1").value
+        
+        out = document.getElementById("result")
+        if(hiddenAuthorname==guessedname){
+           good++;
+           alert("you got it right");
         } else {
             oops++;
-            alert("Sorry.");
+            alert("sorry");
         }
-        document.getElementById("goodCount").textContent = good;
-        document.getElementById("oopsCount").textContent = oops;
+        document.getElementById('good_count').innerHTML = good;
+        document.getElementById('oops_count').innerHTML = oops;
     }
 </script>
 
