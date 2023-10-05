@@ -17,20 +17,18 @@
 <body>
 
     <h2>Author entry Nikhitha Sree Atluri</h2>
-
-
 <form>
-    <div class="mb-3">
-        <label for="form1_age">The hidden author name</label>
-        <input type="password" id="form1_age" name="form1_age" min=10 max=50 step=2 value="Dickens">
-    </div>
-    <div class="mb-3">
-        <label for="form1_nick">Guess the author</label>
-        <input type="text" id="form1_nick" name="form1_nick" autofocus>
-    </div>
-    <input class="btn btn-primary mb-3" type="button" value="Check the guess" onclick="checkAuthor()">
+    <label for="id">The hidden author name </label>
+    <input type ="password" id="id" name="Paro"  value="Dickens" > <br>
+<br>
+    <label for="id1">Guess the author</label>
+    <input type ="text" id="id1" name="Paro" autofocus> <br>
+<br>
+    <input type="button" onclick="checkAuthor()" value="Check the guess">
+    <p>Good Count: <span id="good_count">0</span></p>
+    <p>Oops Count: <span id="oops_count">0</span></p>
 </form>
-
+    
 <p id="result">This text will be replaced </p>
 
 <script> 
