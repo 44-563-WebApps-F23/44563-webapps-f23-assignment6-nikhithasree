@@ -64,28 +64,31 @@ function checkAuthor(){
     output.style.color= "#ff0000"
    
 }
-    useImage = 1;
+</script>
+<div id="imageContainer">
+    <img id="cityImage" src="Alabama city.jpg" alt="City Image" width="100" height="100" onclick="selectImage()">
+</div>
 
-        function selectImage() {
-            switch (useImage) {
-                case 1:
-                    document.getElementById('city').src ="Agra.jpg";
-                    useImage = 2;
-                    break;
-                case 2:
-                    document.getElementById('city').src ="Telangana.jpg";
-                    useImage = 3;
-                    break;
-                case 3:
-                    document.getElementById('city').src ="Lucknow.jpg";
-                    useImage = 1;
-                    break;
-                default:
-                    document.getElementById('city').src =".jpg";
-                    break;
-            }
+<script>
+    var useImage = 1;
+    function selectImage() {
+        switch (useImage) {
+            case 1:
+                document.getElementById("cityImage").src = "Agra.jpg";
+                useImage = 2;
+                break;
+            case 2:
+                document.getElementById("cityImage").src = "Telangana.jpg";
+                useImage = 3;
+                break;
+            case 3:
+                document.getElementById("cityImage").src = "Lucknow.jpg";
+                useImage = 1;
+                break;
+            default:
+                break;
         }
-
+    }
 </script>
 
 </body>
